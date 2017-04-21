@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		5A0F91CC1E01546200CB2C64 /* Jsonifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0F91CB1E01546200CB2C64 /* Jsonifiable.swift */; };
 		5A2BAC2A1E44C70C00ED9FA8 /* BookmarksManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2BAC291E44C70C00ED9FA8 /* BookmarksManager.swift */; };
-		5A85B9F51E2946DE00E0B718 /* BookmarksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A85B9F41E2946DE00E0B718 /* BookmarksViewController.swift */; };
-		5A85B9F71E294B2900E0B718 /* WBBookmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A85B9F61E294B2900E0B718 /* WBBookmark.swift */; };
 		5A85B9F91E29582400E0B718 /* Defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A85B9F81E29582400E0B718 /* Defaults.plist */; };
 		5A95DDF81E0C080C00DFE26B /* WBWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A95DDF71E0C080B00DFE26B /* WBWebView.swift */; };
 		5AC47CA41E2A73C800BCAE82 /* BookmarkSelectSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC47CA31E2A73C800BCAE82 /* BookmarkSelectSegue.swift */; };
 		5AC47CA61E2BE57000BCAE82 /* Tick@480.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AC47CA51E2BE57000BCAE82 /* Tick@480.png */; };
 		5AC47CA81E2CCF2F00BCAE82 /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC47CA71E2CCF2F00BCAE82 /* Animations.swift */; };
+		5B208D421EAA6C5B00B4857B /* Concord-Consortium-Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B208D411EAA6C5B00B4857B /* Concord-Consortium-Logo.png */; };
+		5B49CADE1EA94E7C00FA8BC2 /* BookmarksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B49CADD1EA94E7C00FA8BC2 /* BookmarksViewController.swift */; };
+		5B49CAE01EA94E8600FA8BC2 /* WBBookmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B49CADF1EA94E8600FA8BC2 /* WBBookmark.swift */; };
 		BB303DF11C41EF2F00FCAF24 /* WBPolyfill.js in Resources */ = {isa = PBXBuildFile; fileRef = BB303DF01C41EF2F00FCAF24 /* WBPolyfill.js */; };
 		BB303DF31C42070C00FCAF24 /* WBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB303DF21C42070C00FCAF24 /* WBManager.swift */; };
 		BB4DBE651C97F577000D2C35 /* WBTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4DBE641C97F577000D2C35 /* WBTransaction.swift */; };
@@ -42,8 +43,6 @@
 /* Begin PBXFileReference section */
 		5A0F91CB1E01546200CB2C64 /* Jsonifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Jsonifiable.swift; sourceTree = "<group>"; };
 		5A2BAC291E44C70C00ED9FA8 /* BookmarksManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookmarksManager.swift; sourceTree = "<group>"; };
-		5A85B9F41E2946DE00E0B718 /* BookmarksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookmarksViewController.swift; sourceTree = "<group>"; };
-		5A85B9F61E294B2900E0B718 /* WBBookmark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBBookmark.swift; sourceTree = "<group>"; };
 		5A85B9F81E29582400E0B718 /* Defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Defaults.plist; path = BasicBrowser/Defaults.plist; sourceTree = "<group>"; };
 		5A95DDF71E0C080B00DFE26B /* WBWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBWebView.swift; sourceTree = "<group>"; };
 		5A9B90F71E1FB32E00AEDC07 /* test cases.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "test cases.md"; sourceTree = "<group>"; };
@@ -52,6 +51,9 @@
 		5AC47CA51E2BE57000BCAE82 /* Tick@480.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tick@480.png"; sourceTree = "<group>"; };
 		5AC47CA71E2CCF2F00BCAE82 /* Animations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
 		5AF110A51DDC6AA3006CB88F /* notes.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = notes.md; sourceTree = "<group>"; };
+		5B208D411EAA6C5B00B4857B /* Concord-Consortium-Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Concord-Consortium-Logo.png"; sourceTree = "<group>"; };
+		5B49CADD1EA94E7C00FA8BC2 /* BookmarksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BookmarksViewController.swift; path = BasicBrowser/BookmarksViewController.swift; sourceTree = "<group>"; };
+		5B49CADF1EA94E8600FA8BC2 /* WBBookmark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WBBookmark.swift; path = BasicBrowser/WBBookmark.swift; sourceTree = "<group>"; };
 		BB303DF01C41EF2F00FCAF24 /* WBPolyfill.js */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.javascript; lineEnding = 0; path = WBPolyfill.js; sourceTree = "<group>"; tabWidth = 2; };
 		BB303DF21C42070C00FCAF24 /* WBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBManager.swift; sourceTree = "<group>"; };
 		BB4DBE641C97F577000D2C35 /* WBTransaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBTransaction.swift; sourceTree = "<group>"; };
@@ -90,6 +92,8 @@
 		E44C184D1A36203E00734F8B = {
 			isa = PBXGroup;
 			children = (
+				5B49CADD1EA94E7C00FA8BC2 /* BookmarksViewController.swift */,
+				5B49CADF1EA94E8600FA8BC2 /* WBBookmark.swift */,
 				5A85B9F81E29582400E0B718 /* Defaults.plist */,
 				5A9B90F81E1FBCFD00AEDC07 /* README.md */,
 				5AF110A51DDC6AA3006CB88F /* notes.md */,
@@ -116,17 +120,16 @@
 				5AC47CA71E2CCF2F00BCAE82 /* Animations.swift */,
 				E44C185B1A36203E00734F8B /* AppDelegate.swift */,
 				5AC47CA31E2A73C800BCAE82 /* BookmarkSelectSegue.swift */,
-				5A85B9F41E2946DE00E0B718 /* BookmarksViewController.swift */,
 				5A0F91CB1E01546200CB2C64 /* Jsonifiable.swift */,
 				BBA6730D1C535B8C00076CBA /* PopUpPickerView.swift */,
 				E44C185D1A36203E00734F8B /* ViewController.swift */,
-				5A85B9F61E294B2900E0B718 /* WBBookmark.swift */,
 				BB4DE1F31C8D0A44003151BF /* WBDevice.swift */,
 				BB303DF21C42070C00FCAF24 /* WBManager.swift */,
 				BB4DBE641C97F577000D2C35 /* WBTransaction.swift */,
 				5A95DDF71E0C080B00DFE26B /* WBWebView.swift */,
 				BB303DF01C41EF2F00FCAF24 /* WBPolyfill.js */,
 				E44C18641A36203E00734F8B /* LaunchScreen.xib */,
+				5B208D411EAA6C5B00B4857B /* Concord-Consortium-Logo.png */,
 				E44C185F1A36203E00734F8B /* Main.storyboard */,
 				5AC47CA51E2BE57000BCAE82 /* Tick@480.png */,
 				E44C185A1A36203E00734F8B /* Info.plist */,
@@ -205,7 +208,7 @@
 				TargetAttributes = {
 					E44C18551A36203E00734F8B = {
 						CreatedOnToolsVersion = 6.1.1;
-						DevelopmentTeam = 7RKU9LK986;
+						DevelopmentTeam = T8HS8WBPPQ;
 						LastSwiftMigration = 0800;
 					};
 					E44C186A1A36203E00734F8B = {
@@ -245,6 +248,7 @@
 				5A85B9F91E29582400E0B718 /* Defaults.plist in Resources */,
 				E44C18661A36203E00734F8B /* LaunchScreen.xib in Resources */,
 				E44C18631A36203E00734F8B /* Images.xcassets in Resources */,
+				5B208D421EAA6C5B00B4857B /* Concord-Consortium-Logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,14 +266,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A85B9F51E2946DE00E0B718 /* BookmarksViewController.swift in Sources */,
+				5B49CADE1EA94E7C00FA8BC2 /* BookmarksViewController.swift in Sources */,
 				BB4DBE651C97F577000D2C35 /* WBTransaction.swift in Sources */,
 				5AC47CA81E2CCF2F00BCAE82 /* Animations.swift in Sources */,
 				5AC47CA41E2A73C800BCAE82 /* BookmarkSelectSegue.swift in Sources */,
 				E44C185E1A36203E00734F8B /* ViewController.swift in Sources */,
 				BBA6730E1C535B8C00076CBA /* PopUpPickerView.swift in Sources */,
-				5A85B9F71E294B2900E0B718 /* WBBookmark.swift in Sources */,
 				E44C185C1A36203E00734F8B /* AppDelegate.swift in Sources */,
+				5B49CAE01EA94E8600FA8BC2 /* WBBookmark.swift in Sources */,
 				5A95DDF81E0C080C00DFE26B /* WBWebView.swift in Sources */,
 				BB303DF31C42070C00FCAF24 /* WBManager.swift in Sources */,
 				5A0F91CC1E01546200CB2C64 /* Jsonifiable.swift in Sources */,
@@ -408,12 +412,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = 7RKU9LK986;
+				DEVELOPMENT_TEAM = T8HS8WBPPQ;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = BasicBrowser/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = co.uk.greenparksoftware.webble;
+				PRODUCT_BUNDLE_IDENTIFIER = org.concord.thermoscope;
 				PRODUCT_NAME = WebBLE;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -425,11 +430,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = 7RKU9LK986;
+				DEVELOPMENT_TEAM = T8HS8WBPPQ;
 				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = BasicBrowser/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = co.uk.greenparksoftware.webble;
+				PRODUCT_BUNDLE_IDENTIFIER = org.concord.thermoscope;
 				PRODUCT_NAME = WebBLE;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

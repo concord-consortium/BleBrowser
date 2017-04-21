@@ -102,6 +102,7 @@ open class WBWebView: WKWebView {
 
         // WKWebView static config
         self.translatesAutoresizingMaskIntoConstraints = false
-        self.allowsBackForwardNavigationGestures = true
+        self.allowsBackForwardNavigationGestures = false
+        self.scrollView.isScrollEnabled = false
     }
 }

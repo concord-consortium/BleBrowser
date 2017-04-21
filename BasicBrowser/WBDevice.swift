@@ -414,6 +414,13 @@ open class WBDevice: NSObject, Jsonifiable, CBPeripheralDelegate {
 
     open func peripheral(_ peripheral: CBPeripheral, didUpdateValueFor characteristic: CBCharacteristic, error: Error?) {
 
+        NSLog("Characteristic Updated: \(characteristic.uuid.uuidString) -> \(characteristic.value)")
+        
+        // show value in human-readable format for testing.
+        let val = Int32(littleEndian: characteristic.value!.withUnsafeBytes { $0.pointee })
+        let valString = String(describing:val)
+        NSLog(valString)
+
         if self.readCharacteristicTM.transactions.count > 0 {
             // We have read transactions outstanding, which means that this is a response after a read request, so complete those transactions.
             self.readCharacteristicTM.apply(
@@ -422,6 +429,7 @@ open class WBDevice: NSObject, Jsonifiable, CBPeripheralDelegate {
                         $0.resolveAsFailure(withMessage: "Error reading characteristic: \(err.localizedDescription)")
                         return
                     }
+                    // When the transaction completes, the value is converted to a base64 encoded string
                     $0.resolveAsSuccess(withObject: characteristic.value!)
             },
                 iff: {

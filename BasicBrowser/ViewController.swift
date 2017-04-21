@@ -114,8 +114,9 @@ class ViewController: UIViewController, UITextFieldDelegate, WKNavigationDelegat
         if let prefLoc = UserDefaults.standard.value(forKey: ViewController.prefKeys.lastLocation.rawValue) as? String {
             lastLocation = prefLoc
         } else {
-            let svers = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as! String
-            lastLocation = "https://www.greenparksoftware.co.uk/projects/webble/\(svers)"
+            //let svers = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as! String
+            //lastLocation = "https://www.greenparksoftware.co.uk/projects/webble/\(svers)"
+            lastLocation = "https://concord-consortium.github.io/thermoscope/"
         }
         self.loadLocation(lastLocation)
 
