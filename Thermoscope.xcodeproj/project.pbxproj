@@ -43,7 +43,7 @@
 /* Begin PBXFileReference section */
 		5A0F91CB1E01546200CB2C64 /* Jsonifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Jsonifiable.swift; sourceTree = "<group>"; };
 		5A2BAC291E44C70C00ED9FA8 /* BookmarksManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookmarksManager.swift; sourceTree = "<group>"; };
-		5A85B9F81E29582400E0B718 /* Defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Defaults.plist; path = BasicBrowser/Defaults.plist; sourceTree = "<group>"; };
+		5A85B9F81E29582400E0B718 /* Defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Defaults.plist; path = Thermoscope/Defaults.plist; sourceTree = "<group>"; };
 		5A95DDF71E0C080B00DFE26B /* WBWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBWebView.swift; sourceTree = "<group>"; };
 		5A9B90F71E1FB32E00AEDC07 /* test cases.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "test cases.md"; sourceTree = "<group>"; };
 		5A9B90F81E1FBCFD00AEDC07 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -52,21 +52,21 @@
 		5AC47CA71E2CCF2F00BCAE82 /* Animations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
 		5AF110A51DDC6AA3006CB88F /* notes.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = notes.md; sourceTree = "<group>"; };
 		5B208D411EAA6C5B00B4857B /* Concord-Consortium-Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Concord-Consortium-Logo.png"; sourceTree = "<group>"; };
-		5B49CADD1EA94E7C00FA8BC2 /* BookmarksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BookmarksViewController.swift; path = BasicBrowser/BookmarksViewController.swift; sourceTree = "<group>"; };
-		5B49CADF1EA94E8600FA8BC2 /* WBBookmark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WBBookmark.swift; path = BasicBrowser/WBBookmark.swift; sourceTree = "<group>"; };
+		5B49CADD1EA94E7C00FA8BC2 /* BookmarksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BookmarksViewController.swift; path = Thermoscope/BookmarksViewController.swift; sourceTree = "<group>"; };
+		5B49CADF1EA94E8600FA8BC2 /* WBBookmark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WBBookmark.swift; path = Thermoscope/WBBookmark.swift; sourceTree = "<group>"; };
 		BB303DF01C41EF2F00FCAF24 /* WBPolyfill.js */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.javascript; lineEnding = 0; path = WBPolyfill.js; sourceTree = "<group>"; tabWidth = 2; };
 		BB303DF21C42070C00FCAF24 /* WBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBManager.swift; sourceTree = "<group>"; };
 		BB4DBE641C97F577000D2C35 /* WBTransaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBTransaction.swift; sourceTree = "<group>"; };
 		BB4DE1F31C8D0A44003151BF /* WBDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBDevice.swift; sourceTree = "<group>"; };
 		BBA6730D1C535B8C00076CBA /* PopUpPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpPickerView.swift; sourceTree = "<group>"; };
-		E44C18561A36203E00734F8B /* WebBLE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebBLE.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E44C18561A36203E00734F8B /* Thermoscope.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thermoscope.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E44C185A1A36203E00734F8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E44C185B1A36203E00734F8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E44C185D1A36203E00734F8B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E44C18601A36203E00734F8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E44C18621A36203E00734F8B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E44C18651A36203E00734F8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		E44C186B1A36203E00734F8B /* BleBrowser.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BleBrowser.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E44C186B1A36203E00734F8B /* Thermoscope.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Thermoscope.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E44C18701A36203E00734F8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E44C18711A36203E00734F8B /* BleBrowserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BleBrowserTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,7 +98,7 @@
 				5A9B90F81E1FBCFD00AEDC07 /* README.md */,
 				5AF110A51DDC6AA3006CB88F /* notes.md */,
 				5A9B90F71E1FB32E00AEDC07 /* test cases.md */,
-				E44C18581A36203E00734F8B /* BleBrowser */,
+				E44C18581A36203E00734F8B /* Thermoscope */,
 				E44C186E1A36203E00734F8B /* BleBrowserTests */,
 				E44C18571A36203E00734F8B /* Products */,
 			);
@@ -107,13 +107,13 @@
 		E44C18571A36203E00734F8B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E44C18561A36203E00734F8B /* WebBLE.app */,
-				E44C186B1A36203E00734F8B /* BleBrowser.xctest */,
+				E44C18561A36203E00734F8B /* Thermoscope.app */,
+				E44C186B1A36203E00734F8B /* Thermoscope.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E44C18581A36203E00734F8B /* BleBrowser */ = {
+		E44C18581A36203E00734F8B /* Thermoscope */ = {
 			isa = PBXGroup;
 			children = (
 				5A2BAC291E44C70C00ED9FA8 /* BookmarksManager.swift */,
@@ -135,8 +135,7 @@
 				E44C185A1A36203E00734F8B /* Info.plist */,
 				E44C18621A36203E00734F8B /* Images.xcassets */,
 			);
-			name = BleBrowser;
-			path = BasicBrowser;
+			path = Thermoscope;
 			sourceTree = "<group>";
 		};
 		E44C186E1A36203E00734F8B /* BleBrowserTests */ = {
@@ -160,9 +159,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E44C18551A36203E00734F8B /* BleBrowser */ = {
+		E44C18551A36203E00734F8B /* Thermoscope */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E44C18751A36203E00734F8B /* Build configuration list for PBXNativeTarget "BleBrowser" */;
+			buildConfigurationList = E44C18751A36203E00734F8B /* Build configuration list for PBXNativeTarget "Thermoscope" */;
 			buildPhases = (
 				E44C18521A36203E00734F8B /* Sources */,
 				E44C18531A36203E00734F8B /* Frameworks */,
@@ -172,14 +171,14 @@
 			);
 			dependencies = (
 			);
-			name = BleBrowser;
+			name = Thermoscope;
 			productName = BasicBrowser;
-			productReference = E44C18561A36203E00734F8B /* WebBLE.app */;
+			productReference = E44C18561A36203E00734F8B /* Thermoscope.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E44C186A1A36203E00734F8B /* BleBrowserTests */ = {
+		E44C186A1A36203E00734F8B /* ThermoscopeTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E44C18781A36203E00734F8B /* Build configuration list for PBXNativeTarget "BleBrowserTests" */;
+			buildConfigurationList = E44C18781A36203E00734F8B /* Build configuration list for PBXNativeTarget "ThermoscopeTests" */;
 			buildPhases = (
 				E44C18671A36203E00734F8B /* Sources */,
 				E44C18681A36203E00734F8B /* Frameworks */,
@@ -190,9 +189,9 @@
 			dependencies = (
 				E44C186D1A36203E00734F8B /* PBXTargetDependency */,
 			);
-			name = BleBrowserTests;
+			name = ThermoscopeTests;
 			productName = BasicBrowserTests;
-			productReference = E44C186B1A36203E00734F8B /* BleBrowser.xctest */;
+			productReference = E44C186B1A36203E00734F8B /* Thermoscope.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -218,7 +217,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E44C18511A36203E00734F8B /* Build configuration list for PBXProject "BleBrowser" */;
+			buildConfigurationList = E44C18511A36203E00734F8B /* Build configuration list for PBXProject "Thermoscope" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -231,8 +230,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E44C18551A36203E00734F8B /* BleBrowser */,
-				E44C186A1A36203E00734F8B /* BleBrowserTests */,
+				E44C18551A36203E00734F8B /* Thermoscope */,
+				E44C186A1A36203E00734F8B /* ThermoscopeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -295,7 +294,7 @@
 /* Begin PBXTargetDependency section */
 		E44C186D1A36203E00734F8B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E44C18551A36203E00734F8B /* BleBrowser */;
+			target = E44C18551A36203E00734F8B /* Thermoscope */;
 			targetProxy = E44C186C1A36203E00734F8B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -415,11 +414,11 @@
 				DEVELOPMENT_TEAM = T8HS8WBPPQ;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = "";
-				INFOPLIST_FILE = BasicBrowser/Info.plist;
+				INFOPLIST_FILE = Thermoscope/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.concord.thermoscope;
-				PRODUCT_NAME = WebBLE;
+				PRODUCT_NAME = Thermoscope;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -432,11 +431,11 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = T8HS8WBPPQ;
 				FRAMEWORK_SEARCH_PATHS = "";
-				INFOPLIST_FILE = BasicBrowser/Info.plist;
+				INFOPLIST_FILE = Thermoscope/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.concord.thermoscope;
-				PRODUCT_NAME = WebBLE;
+				PRODUCT_NAME = Thermoscope;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -448,9 +447,9 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = BasicBrowserTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = BleBrowser;
+				PRODUCT_NAME = Thermoscope;
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BleBrowser.app/BleBrowser";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Thermoscope.app/Thermoscope";
 			};
 			name = Debug;
 		};
@@ -460,16 +459,16 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = BasicBrowserTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = BleBrowser;
+				PRODUCT_NAME = Thermoscope;
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BleBrowser.app/BleBrowser";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Thermoscope.app/Thermoscope";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E44C18511A36203E00734F8B /* Build configuration list for PBXProject "BleBrowser" */ = {
+		E44C18511A36203E00734F8B /* Build configuration list for PBXProject "Thermoscope" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E44C18731A36203E00734F8B /* Debug */,
@@ -478,7 +477,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E44C18751A36203E00734F8B /* Build configuration list for PBXNativeTarget "BleBrowser" */ = {
+		E44C18751A36203E00734F8B /* Build configuration list for PBXNativeTarget "Thermoscope" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E44C18761A36203E00734F8B /* Debug */,
@@ -487,7 +486,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E44C18781A36203E00734F8B /* Build configuration list for PBXNativeTarget "BleBrowserTests" */ = {
+		E44C18781A36203E00734F8B /* Build configuration list for PBXNativeTarget "ThermoscopeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E44C18791A36203E00734F8B /* Debug */,
