@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="bXw-Ly-snu">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="bXw-Ly-snu">
+    <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -33,37 +34,37 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WebBLE" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Thermoscope" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FR6-sF-hFE">
-                                <rect key="frame" x="0.0" y="102" width="375" height="521"/>
+                                <rect key="frame" x="0.0" y="44.5" width="1024" height="723.5"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DRU-nU-zz3" customClass="WBWebView" customModule="WebBLE" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="521"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DRU-nU-zz3" customClass="WBWebView" customModule="Thermoscope" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="723.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <outlet property="devicePicker" destination="sbN-21-YtK" id="TvY-wa-llN"/>
                                         </connections>
                                     </view>
                                     <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tick@480.png" translatesAutoresizingMaskIntoConstraints="NO" id="6wE-az-iDp">
-                                        <rect key="frame" x="67" y="140" width="240" height="240"/>
+                                        <rect key="frame" x="391.5" y="241.5" width="240" height="240"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="240" id="em1-ft-ljS"/>
                                             <constraint firstAttribute="height" constant="240" id="qSE-Sl-Qc3"/>
                                         </constraints>
                                     </imageView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sbN-21-YtK" customClass="PopUpPickerView" customModule="WebBLE" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="521" width="375" height="290"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sbN-21-YtK" customClass="PopUpPickerView" customModule="Thermoscope" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="723.5" width="1024" height="290"/>
                                         <subviews>
                                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jsu-PU-dbt">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="1024" height="44"/>
                                                 <items>
                                                     <barButtonItem systemItem="cancel" id="eYY-A5-dLj"/>
                                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="iTx-fl-yVJ"/>
@@ -71,7 +72,7 @@
                                                 </items>
                                             </toolbar>
                                             <pickerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jgr-9N-Ch2">
-                                                <rect key="frame" x="0.0" y="44" width="375" height="246"/>
+                                                <rect key="frame" x="0.0" y="44" width="1024" height="246"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             </pickerView>
                                         </subviews>
@@ -105,8 +106,14 @@
                                     <constraint firstItem="6wE-az-iDp" firstAttribute="centerX" secondItem="FR6-sF-hFE" secondAttribute="centerX" id="xCH-QQ-ZYu"/>
                                 </constraints>
                             </view>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1f6-zQ-2YY">
-                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="O1l-7F-uXL">
+                                <rect key="frame" x="20" y="44.5" width="984" height="30"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="URL" returnKeyType="go" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <toolbar hidden="YES" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1f6-zQ-2YY">
+                                <rect key="frame" x="0.0" y="768" width="1024" height="44"/>
                                 <items>
                                     <barButtonItem enabled="NO" title="&lt;" style="plain" id="NaX-Y9-Gfj"/>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="sXn-kx-dSX"/>
@@ -127,25 +134,19 @@
                                     <barButtonItem enabled="NO" title="&gt;" id="qhG-nx-nEQ"/>
                                 </items>
                             </toolbar>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="O1l-7F-uXL">
-                                <rect key="frame" x="16" y="72" width="343" height="30"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="URL" returnKeyType="go" enablesReturnKeyAutomatically="YES"/>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="O1l-7F-uXL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="1xl-vn-g1F"/>
+                            <constraint firstItem="O1l-7F-uXL" firstAttribute="baseline" secondItem="y3c-jy-aDJ" secondAttribute="bottom" symbolic="YES" id="1xl-vn-g1F"/>
                             <constraint firstItem="FR6-sF-hFE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="BrV-eG-Hn5"/>
                             <constraint firstItem="O1l-7F-uXL" firstAttribute="centerX" secondItem="FR6-sF-hFE" secondAttribute="centerX" id="M6y-jD-dK8"/>
                             <constraint firstItem="FR6-sF-hFE" firstAttribute="trailing" secondItem="1f6-zQ-2YY" secondAttribute="trailing" id="Q1D-WB-zOb"/>
                             <constraint firstItem="FR6-sF-hFE" firstAttribute="leading" secondItem="1f6-zQ-2YY" secondAttribute="leading" id="Xsm-ZL-EdN"/>
-                            <constraint firstItem="1f6-zQ-2YY" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="YEE-rZ-tSf"/>
+                            <constraint firstItem="1f6-zQ-2YY" firstAttribute="top" secondItem="wfy-db-euE" secondAttribute="top" id="YEE-rZ-tSf"/>
                             <constraint firstItem="1f6-zQ-2YY" firstAttribute="top" secondItem="FR6-sF-hFE" secondAttribute="bottom" id="eaN-aH-yWb"/>
                             <constraint firstAttribute="trailing" secondItem="FR6-sF-hFE" secondAttribute="trailing" id="fQw-bi-VQq"/>
                             <constraint firstItem="O1l-7F-uXL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="gid-BO-hHD"/>
-                            <constraint firstItem="FR6-sF-hFE" firstAttribute="top" secondItem="O1l-7F-uXL" secondAttribute="bottom" id="hjA-tI-1Me"/>
+                            <constraint firstItem="FR6-sF-hFE" firstAttribute="top" secondItem="O1l-7F-uXL" secondAttribute="top" id="hjA-tI-1Me"/>
                             <constraint firstItem="1f6-zQ-2YY" firstAttribute="top" secondItem="sbN-21-YtK" secondAttribute="bottom" constant="-290" id="lVb-v6-Lgk"/>
                         </constraints>
                     </view>
@@ -161,33 +162,33 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-346.39999999999998" y="366.56671664167919"/>
+            <point key="canvasLocation" x="-346.875" y="366.40625"/>
         </scene>
         <!--Bookmarks View Controller-->
         <scene sceneID="cuT-Se-jjO">
             <objects>
-                <tableViewController id="bL6-a5-4h5" customClass="BookmarksViewController" customModule="WebBLE" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="bL6-a5-4h5" customClass="BookmarksViewController" customModule="Thermoscope" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="gNH-ze-Sky">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="bookmark" textLabel="oFT-ZQ-s8A" detailTextLabel="hzE-yV-kjH" style="IBUITableViewCellStyleSubtitle" id="0yI-38-CeH">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="1024" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0yI-38-CeH" id="2Hb-F4-o6p">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oFT-ZQ-s8A">
-                                            <rect key="frame" x="15" y="4" width="34" height="21"/>
+                                            <rect key="frame" x="176" y="5" width="33.5" height="20.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="natural" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" id="hzE-yV-kjH">
-                                            <rect key="frame" x="15" y="25" width="33" height="15"/>
+                                            <rect key="frame" x="176" y="25.5" width="33" height="14.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <nil key="textColor"/>
