@@ -27,18 +27,7 @@
 		E44C18611A36203E00734F8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E44C185F1A36203E00734F8B /* Main.storyboard */; };
 		E44C18631A36203E00734F8B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E44C18621A36203E00734F8B /* Images.xcassets */; };
 		E44C18661A36203E00734F8B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E44C18641A36203E00734F8B /* LaunchScreen.xib */; };
-		E44C18721A36203E00734F8B /* BleBrowserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44C18711A36203E00734F8B /* BleBrowserTests.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		E44C186C1A36203E00734F8B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E44C184E1A36203E00734F8B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E44C18551A36203E00734F8B;
-			remoteInfo = BasicBrowser;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		5A0F91CB1E01546200CB2C64 /* Jsonifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Jsonifiable.swift; sourceTree = "<group>"; };
@@ -66,20 +55,10 @@
 		E44C18601A36203E00734F8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E44C18621A36203E00734F8B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E44C18651A36203E00734F8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		E44C186B1A36203E00734F8B /* Thermoscope.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Thermoscope.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E44C18701A36203E00734F8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E44C18711A36203E00734F8B /* BleBrowserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BleBrowserTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E44C18531A36203E00734F8B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E44C18681A36203E00734F8B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -99,7 +78,6 @@
 				5AF110A51DDC6AA3006CB88F /* notes.md */,
 				5A9B90F71E1FB32E00AEDC07 /* test cases.md */,
 				E44C18581A36203E00734F8B /* Thermoscope */,
-				E44C186E1A36203E00734F8B /* BleBrowserTests */,
 				E44C18571A36203E00734F8B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,7 +86,6 @@
 			isa = PBXGroup;
 			children = (
 				E44C18561A36203E00734F8B /* Thermoscope.app */,
-				E44C186B1A36203E00734F8B /* Thermoscope.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -138,24 +115,6 @@
 			path = Thermoscope;
 			sourceTree = "<group>";
 		};
-		E44C186E1A36203E00734F8B /* BleBrowserTests */ = {
-			isa = PBXGroup;
-			children = (
-				E44C18711A36203E00734F8B /* BleBrowserTests.swift */,
-				E44C186F1A36203E00734F8B /* Supporting Files */,
-			);
-			name = BleBrowserTests;
-			path = BasicBrowserTests;
-			sourceTree = "<group>";
-		};
-		E44C186F1A36203E00734F8B /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				E44C18701A36203E00734F8B /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -176,24 +135,6 @@
 			productReference = E44C18561A36203E00734F8B /* Thermoscope.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E44C186A1A36203E00734F8B /* ThermoscopeTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E44C18781A36203E00734F8B /* Build configuration list for PBXNativeTarget "ThermoscopeTests" */;
-			buildPhases = (
-				E44C18671A36203E00734F8B /* Sources */,
-				E44C18681A36203E00734F8B /* Frameworks */,
-				E44C18691A36203E00734F8B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E44C186D1A36203E00734F8B /* PBXTargetDependency */,
-			);
-			name = ThermoscopeTests;
-			productName = BasicBrowserTests;
-			productReference = E44C186B1A36203E00734F8B /* Thermoscope.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -202,18 +143,13 @@
 			attributes = {
 				LastSwiftMigration = 0720;
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Stefan Arentz";
 				TargetAttributes = {
 					E44C18551A36203E00734F8B = {
 						CreatedOnToolsVersion = 6.1.1;
 						DevelopmentTeam = T8HS8WBPPQ;
-						LastSwiftMigration = 0800;
-					};
-					E44C186A1A36203E00734F8B = {
-						CreatedOnToolsVersion = 6.1.1;
-						LastSwiftMigration = 0800;
-						TestTargetID = E44C18551A36203E00734F8B;
+						LastSwiftMigration = 0900;
 					};
 				};
 			};
@@ -231,7 +167,6 @@
 			projectRoot = "";
 			targets = (
 				E44C18551A36203E00734F8B /* Thermoscope */,
-				E44C186A1A36203E00734F8B /* ThermoscopeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -248,13 +183,6 @@
 				E44C18661A36203E00734F8B /* LaunchScreen.xib in Resources */,
 				E44C18631A36203E00734F8B /* Images.xcassets in Resources */,
 				5B208D421EAA6C5B00B4857B /* Concord-Consortium-Logo.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E44C18691A36203E00734F8B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,23 +209,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E44C18671A36203E00734F8B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E44C18721A36203E00734F8B /* BleBrowserTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		E44C186D1A36203E00734F8B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E44C18551A36203E00734F8B /* Thermoscope */;
-			targetProxy = E44C186C1A36203E00734F8B /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E44C185F1A36203E00734F8B /* Main.storyboard */ = {
@@ -327,14 +239,20 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -374,14 +292,20 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -419,7 +343,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.concord.thermoscope;
 				PRODUCT_NAME = Thermoscope;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -436,32 +361,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.concord.thermoscope;
 				PRODUCT_NAME = Thermoscope;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		E44C18791A36203E00734F8B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = BasicBrowserTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = Thermoscope;
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Thermoscope.app/Thermoscope";
-			};
-			name = Debug;
-		};
-		E44C187A1A36203E00734F8B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = BasicBrowserTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = Thermoscope;
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Thermoscope.app/Thermoscope";
 			};
 			name = Release;
 		};
@@ -482,15 +384,6 @@
 			buildConfigurations = (
 				E44C18761A36203E00734F8B /* Debug */,
 				E44C18771A36203E00734F8B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E44C18781A36203E00734F8B /* Build configuration list for PBXNativeTarget "ThermoscopeTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E44C18791A36203E00734F8B /* Debug */,
-				E44C187A1A36203E00734F8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

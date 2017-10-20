@@ -109,16 +109,10 @@ class ViewController: UIViewController, UITextFieldDelegate, WKNavigationDelegat
 
         self.loadPreferences()
 
-        // Load last location
-        var lastLocation: String
-        if let prefLoc = UserDefaults.standard.value(forKey: ViewController.prefKeys.lastLocation.rawValue) as? String {
-            lastLocation = prefLoc
-        } else {
-            //let svers = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as! String
-            //lastLocation = "https://www.greenparksoftware.co.uk/projects/webble/\(svers)"
-            lastLocation = "https://concord-consortium.github.io/thermoscope/"
-        }
-        self.loadLocation(lastLocation)
+        // Load app location
+        var homeLocation: String
+        homeLocation = "https://thermoscope.concord.org/branch/master/"
+        self.loadLocation(homeLocation)
 
         self.goBackButton.target = self.webView
         self.goBackButton.action = #selector(self.webView.goBack)
@@ -199,7 +193,7 @@ class ViewController: UIViewController, UITextFieldDelegate, WKNavigationDelegat
         case "canGoForward":
             self.goForwardButton.isEnabled = defChange[NSKeyValueChangeKey.newKey] as! Bool
         default:
-            NSLog("Unexpected change observed by ViewController: \(keyPath)")
+            NSLog("Unexpected change observed by ViewController: \(String(describing: keyPath))")
         }
     }
 

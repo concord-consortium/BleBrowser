@@ -319,7 +319,7 @@ open class WBDevice: NSObject, Jsonifiable, CBPeripheralDelegate {
                 break
             }
 
-            NSLog("Writing value \(String(data: view.data, encoding: String.Encoding.utf8)) to peripheral")
+            NSLog("Writing value \(String(describing: String(data: view.data, encoding: String.Encoding.utf8))) to peripheral")
             self.peripheral.writeValue(view.data, for: char, type: CBCharacteristicWriteType.withoutResponse)
             transaction.resolveAsSuccess()
 
@@ -334,7 +334,7 @@ open class WBDevice: NSObject, Jsonifiable, CBPeripheralDelegate {
                 view.resolveUnknownCharacteristic()
                 break
             }
-            NSLog("Starting notifications for characteristic \(view.characteristicUUID.uuidString) on device \(self.peripheral.name)")
+            NSLog("Starting notifications for characteristic \(view.characteristicUUID.uuidString) on device \(String(describing: self.peripheral.name))")
 
             self.peripheral.setNotifyValue(true, for: char)
             transaction.resolveAsSuccess()
@@ -406,9 +406,9 @@ open class WBDevice: NSObject, Jsonifiable, CBPeripheralDelegate {
 
     open func peripheral(_ peripheral: CBPeripheral, didUpdateNotificationStateFor characteristic: CBCharacteristic, error: Error?) {
         if let err = error {
-            NSLog("Error \(err) adding notifications to device \(peripheral.name) for characteristic \(characteristic.uuid.uuidString)")
+            NSLog("Error \(err) adding notifications to device \(String(describing: peripheral.name)) for characteristic \(characteristic.uuid.uuidString)")
         } else {
-            NSLog("Notifications enabled on device \(peripheral.name) for characteristic \(characteristic.uuid.uuidString)")
+            NSLog("Notifications enabled on device \(String(describing: peripheral.name)) for characteristic \(characteristic.uuid.uuidString)")
         }
     }
 
