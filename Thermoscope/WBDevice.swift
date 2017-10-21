@@ -414,7 +414,7 @@ open class WBDevice: NSObject, Jsonifiable, CBPeripheralDelegate {
 
     open func peripheral(_ peripheral: CBPeripheral, didUpdateValueFor characteristic: CBCharacteristic, error: Error?) {
 
-        NSLog("Characteristic Updated: \(characteristic.uuid.uuidString) -> \(characteristic.value)")
+        NSLog("Characteristic Updated: \(characteristic.uuid.uuidString) -> \(String(describing: characteristic.value))")
         
         // show value in human-readable format for testing.
         let val = Int32(littleEndian: characteristic.value!.withUnsafeBytes { $0.pointee })
@@ -508,7 +508,7 @@ class BluetoothAdvertisingData{
         let data = advertisementData[CBAdvertisementDataManufacturerDataKey]
         self.manufacturerData = ""
         if data != nil{
-            if let dataString = NSString(data: data as! Data, encoding: String.Encoding.utf8.rawValue) as? String {
+            if let dataString = NSString(data: data as! Data, encoding: String.Encoding.utf8.rawValue) as String? {
                 self.manufacturerData = dataString
             } else {
                 print("Error parsing advertisement data: not a valid UTF-8 sequence")
