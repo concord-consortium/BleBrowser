@@ -12,6 +12,7 @@
         <!--Navigation Controller-->
         <scene sceneID="lV6-vP-8ff">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YF2-bs-sa9" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="bXw-Ly-snu" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="izC-eW-IMa">
                         <rect key="frame" x="0.0" y="20" width="1024" height="44"/>
@@ -24,7 +25,6 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="MvE-Ox-6zP"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YF2-bs-sa9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1204" y="367"/>
         </scene>
@@ -41,24 +41,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FR6-sF-hFE">
-                                <rect key="frame" x="0.0" y="44.5" width="1024" height="723.5"/>
+                                <rect key="frame" x="0.0" y="24" width="1024" height="744"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DRU-nU-zz3" customClass="WBWebView" customModule="Thermoscope" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="723.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="744"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <outlet property="devicePicker" destination="sbN-21-YtK" id="TvY-wa-llN"/>
                                         </connections>
                                     </view>
                                     <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tick@480.png" translatesAutoresizingMaskIntoConstraints="NO" id="6wE-az-iDp">
-                                        <rect key="frame" x="391.5" y="241.5" width="240" height="240"/>
+                                        <rect key="frame" x="391.5" y="252" width="240" height="240"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="240" id="em1-ft-ljS"/>
                                             <constraint firstAttribute="height" constant="240" id="qSE-Sl-Qc3"/>
                                         </constraints>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sbN-21-YtK" customClass="PopUpPickerView" customModule="Thermoscope" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="723.5" width="1024" height="290"/>
+                                        <rect key="frame" x="0.0" y="744" width="1024" height="290"/>
                                         <subviews>
                                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jsu-PU-dbt">
                                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="44"/>
@@ -130,7 +130,7 @@
                             <constraint firstItem="1f6-zQ-2YY" firstAttribute="top" secondItem="wfy-db-euE" secondAttribute="top" id="YEE-rZ-tSf"/>
                             <constraint firstItem="1f6-zQ-2YY" firstAttribute="top" secondItem="FR6-sF-hFE" secondAttribute="bottom" id="eaN-aH-yWb"/>
                             <constraint firstAttribute="trailing" secondItem="FR6-sF-hFE" secondAttribute="trailing" id="fQw-bi-VQq"/>
-                            <constraint firstItem="FR6-sF-hFE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="44.5" id="hjA-tI-1Me"/>
+                            <constraint firstItem="FR6-sF-hFE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="24" id="hjA-tI-1Me"/>
                             <constraint firstItem="1f6-zQ-2YY" firstAttribute="top" secondItem="sbN-21-YtK" secondAttribute="bottom" constant="-290" id="lVb-v6-Lgk"/>
                         </constraints>
                     </view>
