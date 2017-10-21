@@ -5,9 +5,7 @@
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
-        <capability name="Baseline standard spacing" minToolsVersion="9.0"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -105,12 +103,6 @@
                                     <constraint firstItem="6wE-az-iDp" firstAttribute="centerX" secondItem="FR6-sF-hFE" secondAttribute="centerX" id="xCH-QQ-ZYu"/>
                                 </constraints>
                             </view>
-                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="O1l-7F-uXL">
-                                <rect key="frame" x="20" y="44.5" width="984" height="30"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="URL" returnKeyType="go" enablesReturnKeyAutomatically="YES"/>
-                            </textField>
                             <toolbar hidden="YES" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1f6-zQ-2YY">
                                 <rect key="frame" x="0.0" y="768" width="1024" height="44"/>
                                 <items>
@@ -132,16 +124,13 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="O1l-7F-uXL" firstAttribute="baseline" secondItem="y3c-jy-aDJ" secondAttribute="bottom" symbolic="YES" id="1xl-vn-g1F"/>
                             <constraint firstItem="FR6-sF-hFE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="BrV-eG-Hn5"/>
-                            <constraint firstItem="O1l-7F-uXL" firstAttribute="centerX" secondItem="FR6-sF-hFE" secondAttribute="centerX" id="M6y-jD-dK8"/>
                             <constraint firstItem="FR6-sF-hFE" firstAttribute="trailing" secondItem="1f6-zQ-2YY" secondAttribute="trailing" id="Q1D-WB-zOb"/>
                             <constraint firstItem="FR6-sF-hFE" firstAttribute="leading" secondItem="1f6-zQ-2YY" secondAttribute="leading" id="Xsm-ZL-EdN"/>
                             <constraint firstItem="1f6-zQ-2YY" firstAttribute="top" secondItem="wfy-db-euE" secondAttribute="top" id="YEE-rZ-tSf"/>
                             <constraint firstItem="1f6-zQ-2YY" firstAttribute="top" secondItem="FR6-sF-hFE" secondAttribute="bottom" id="eaN-aH-yWb"/>
                             <constraint firstAttribute="trailing" secondItem="FR6-sF-hFE" secondAttribute="trailing" id="fQw-bi-VQq"/>
-                            <constraint firstItem="O1l-7F-uXL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="gid-BO-hHD"/>
-                            <constraint firstItem="FR6-sF-hFE" firstAttribute="top" secondItem="O1l-7F-uXL" secondAttribute="top" id="hjA-tI-1Me"/>
+                            <constraint firstItem="FR6-sF-hFE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="44.5" id="hjA-tI-1Me"/>
                             <constraint firstItem="1f6-zQ-2YY" firstAttribute="top" secondItem="sbN-21-YtK" secondAttribute="bottom" constant="-290" id="lVb-v6-Lgk"/>
                         </constraints>
                     </view>
@@ -149,7 +138,6 @@
                     <connections>
                         <outlet property="goBackButton" destination="NaX-Y9-Gfj" id="0Xc-k5-kMK"/>
                         <outlet property="goForwardButton" destination="qhG-nx-nEQ" id="1GO-aY-9L7"/>
-                        <outlet property="locationTextField" destination="O1l-7F-uXL" id="i8M-pT-n46"/>
                         <outlet property="refreshButton" destination="LXB-CH-4RT" id="350-AZ-rBZ"/>
                         <outlet property="tick" destination="6wE-az-iDp" id="aNh-gM-jXz"/>
                         <outlet property="webView" destination="DRU-nU-zz3" id="STI-th-mML"/>

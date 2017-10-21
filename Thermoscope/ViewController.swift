@@ -28,7 +28,7 @@ class ViewController: UIViewController, UITextFieldDelegate, WKNavigationDelegat
     let currentPrefVersion = 1
 
     // MARK: IBOutlets
-    @IBOutlet weak var locationTextField: UITextField!
+    //@IBOutlet weak var locationTextField: UITextField!
     @IBOutlet var tick: UIImageView!
 
     @IBOutlet var goBackButton: UIBarButtonItem!
@@ -43,13 +43,13 @@ class ViewController: UIViewController, UITextFieldDelegate, WKNavigationDelegat
     }
 
     @IBAction func reload() {
-        if (self.webView?.url?.absoluteString ?? "about:blank") == "about:blank",
-            let text = self.locationTextField.text,
-            !text.isEmpty {
-            self.loadLocation(text)
-        } else {
+//        if (self.webView?.url?.absoluteString ?? "about:blank") == "about:blank",
+//            let text = self.locationTextField.text,
+//            !text.isEmpty {
+//            self.loadLocation(text)
+//        } else {
             self.webView.reload()
-        }
+//        }
     }
 
     // MARK: - Event handling
@@ -58,7 +58,7 @@ class ViewController: UIViewController, UITextFieldDelegate, WKNavigationDelegat
         super.viewDidLoad()
 
         // connect view to other objects
-        self.locationTextField.delegate = self
+        //self.locationTextField.delegate = self
         self.webView.wbManager = self.wbManager
         self.webView.navigationDelegate = self
         self.webView.uiDelegate = self
@@ -96,7 +96,7 @@ class ViewController: UIViewController, UITextFieldDelegate, WKNavigationDelegat
         if !location.hasPrefix("http://") && !location.hasPrefix("https://") {
             location = "https://" + location
         }
-        locationTextField.text = location
+        //locationTextField.text = location
         self.webView.load(URLRequest(url: URL(string: location)!))
         
     }
@@ -112,7 +112,7 @@ class ViewController: UIViewController, UITextFieldDelegate, WKNavigationDelegat
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         if let urlString = webView.url?.absoluteString,
             urlString != "about:blank" {
-            self.locationTextField.text = urlString
+            //self.locationTextField.text = urlString
             UserDefaults.standard.setValue(urlString, forKey: ViewController.prefKeys.lastLocation.rawValue)
         }
     }
