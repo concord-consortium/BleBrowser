@@ -69,7 +69,7 @@ class ViewController: UIViewController, UITextFieldDelegate, WKNavigationDelegat
 
         // Load app location
         var homeLocation: String
-        homeLocation = "https://thermoscope.concord.org/branch/master/"
+        homeLocation = "https://thermoscope.concord.org/branch/ios/"
         self.loadLocation(homeLocation)
 
         self.goBackButton.target = self.webView
