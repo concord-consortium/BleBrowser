@@ -27,11 +27,9 @@
 /* Begin PBXFileReference section */
 		5A0F91CB1E01546200CB2C64 /* Jsonifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Jsonifiable.swift; sourceTree = "<group>"; };
 		5A95DDF71E0C080B00DFE26B /* WBWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBWebView.swift; sourceTree = "<group>"; };
-		5A9B90F71E1FB32E00AEDC07 /* test cases.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "test cases.md"; sourceTree = "<group>"; };
 		5A9B90F81E1FBCFD00AEDC07 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		5AC47CA51E2BE57000BCAE82 /* Tick@480.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tick@480.png"; sourceTree = "<group>"; };
 		5AC47CA71E2CCF2F00BCAE82 /* Animations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
-		5AF110A51DDC6AA3006CB88F /* notes.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = notes.md; sourceTree = "<group>"; };
 		5B208D411EAA6C5B00B4857B /* Concord-Consortium-Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Concord-Consortium-Logo.png"; sourceTree = "<group>"; };
 		BB303DF01C41EF2F00FCAF24 /* WBPolyfill.js */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.javascript; lineEnding = 0; path = WBPolyfill.js; sourceTree = "<group>"; tabWidth = 2; };
 		BB303DF21C42070C00FCAF24 /* WBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBManager.swift; sourceTree = "<group>"; };
@@ -62,8 +60,6 @@
 			isa = PBXGroup;
 			children = (
 				5A9B90F81E1FBCFD00AEDC07 /* README.md */,
-				5AF110A51DDC6AA3006CB88F /* notes.md */,
-				5A9B90F71E1FB32E00AEDC07 /* test cases.md */,
 				E44C18581A36203E00734F8B /* Thermoscope */,
 				E44C18571A36203E00734F8B /* Products */,
 			);
@@ -258,6 +254,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = thermoscope;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -303,6 +300,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = thermoscope;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
