@@ -68,9 +68,20 @@ class ViewController: UIViewController, UITextFieldDelegate, WKNavigationDelegat
         }
 
         // Load app location
-        var homeLocation: String
-        homeLocation = "https://thermoscope.concord.org/branch/ios/"
-        self.loadLocation(homeLocation)
+        
+        // Local loading:
+        let url = Bundle.main.url(forResource: "index", withExtension: "html", subdirectory: "dist")!
+        debugPrint("url:", url)
+        self.webView.loadFileURL(url, allowingReadAccessTo: url)
+        debugPrint("loadFileURL called")
+        let request = URLRequest(url: url)
+        debugPrint("request created")
+        self.webView.load(request)
+        debugPrint(request)
+        // Remote loading:
+//        var homeLocation: String
+//        homeLocation = "https://thermoscope.concord.org/branch/ios/"
+//        self.loadLocation(homeLocation)
 
         self.goBackButton.target = self.webView
         self.goBackButton.action = #selector(self.webView.goBack)
@@ -122,6 +133,7 @@ class ViewController: UIViewController, UITextFieldDelegate, WKNavigationDelegat
     }
     
     func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {
+        debugPrint(error.localizedDescription)
         webView.loadHTMLString("<p>Fail Provisional Navigation: \(error.localizedDescription)</p>", baseURL: nil)
     }
 

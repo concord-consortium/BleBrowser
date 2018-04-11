@@ -12,6 +12,7 @@
 		5AC47CA61E2BE57000BCAE82 /* Tick@480.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AC47CA51E2BE57000BCAE82 /* Tick@480.png */; };
 		5AC47CA81E2CCF2F00BCAE82 /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC47CA71E2CCF2F00BCAE82 /* Animations.swift */; };
 		5B208D421EAA6C5B00B4857B /* Concord-Consortium-Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B208D411EAA6C5B00B4857B /* Concord-Consortium-Logo.png */; };
+		5B3ABD15207CF927000DED57 /* dist in Resources */ = {isa = PBXBuildFile; fileRef = 5B3ABD14207CF927000DED57 /* dist */; };
 		BB303DF11C41EF2F00FCAF24 /* WBPolyfill.js in Resources */ = {isa = PBXBuildFile; fileRef = BB303DF01C41EF2F00FCAF24 /* WBPolyfill.js */; };
 		BB303DF31C42070C00FCAF24 /* WBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB303DF21C42070C00FCAF24 /* WBManager.swift */; };
 		BB4DBE651C97F577000D2C35 /* WBTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4DBE641C97F577000D2C35 /* WBTransaction.swift */; };
@@ -31,6 +32,7 @@
 		5AC47CA51E2BE57000BCAE82 /* Tick@480.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tick@480.png"; sourceTree = "<group>"; };
 		5AC47CA71E2CCF2F00BCAE82 /* Animations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
 		5B208D411EAA6C5B00B4857B /* Concord-Consortium-Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Concord-Consortium-Logo.png"; sourceTree = "<group>"; };
+		5B3ABD14207CF927000DED57 /* dist */ = {isa = PBXFileReference; lastKnownFileType = folder; path = dist; sourceTree = "<group>"; };
 		BB303DF01C41EF2F00FCAF24 /* WBPolyfill.js */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.javascript; lineEnding = 0; path = WBPolyfill.js; sourceTree = "<group>"; tabWidth = 2; };
 		BB303DF21C42070C00FCAF24 /* WBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBManager.swift; sourceTree = "<group>"; };
 		BB4DBE641C97F577000D2C35 /* WBTransaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBTransaction.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 		E44C18581A36203E00734F8B /* Thermoscope */ = {
 			isa = PBXGroup;
 			children = (
+				5B3ABD14207CF927000DED57 /* dist */,
 				5AC47CA71E2CCF2F00BCAE82 /* Animations.swift */,
 				E44C185B1A36203E00734F8B /* AppDelegate.swift */,
 				5A0F91CB1E01546200CB2C64 /* Jsonifiable.swift */,
@@ -163,6 +166,7 @@
 				E44C18661A36203E00734F8B /* LaunchScreen.xib in Resources */,
 				E44C18631A36203E00734F8B /* Images.xcassets in Resources */,
 				5B208D421EAA6C5B00B4857B /* Concord-Consortium-Logo.png in Resources */,
+				5B3ABD15207CF927000DED57 /* dist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
