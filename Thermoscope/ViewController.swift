@@ -24,10 +24,10 @@ class ViewController: UIViewController, UITextFieldDelegate, WKNavigationDelegat
         case version
     }
 
-    // MARK: - Properties
+    // Properties
     let currentPrefVersion = 1
 
-    // MARK: IBOutlets
+    // IBOutlets
     //@IBOutlet weak var locationTextField: UITextField!
     @IBOutlet var tick: UIImageView!
 
@@ -43,22 +43,15 @@ class ViewController: UIViewController, UITextFieldDelegate, WKNavigationDelegat
     }
 
     @IBAction func reload() {
-//        if (self.webView?.url?.absoluteString ?? "about:blank") == "about:blank",
-//            let text = self.locationTextField.text,
-//            !text.isEmpty {
-//            self.loadLocation(text)
-//        } else {
-            self.webView.reload()
-//        }
+        self.webView.reload()
     }
 
-    // MARK: - Event handling
+    // Event handling
     override func viewDidLoad() {
        
         super.viewDidLoad()
 
         // connect view to other objects
-        //self.locationTextField.delegate = self
         self.webView.wbManager = self.wbManager
         self.webView.navigationDelegate = self
         self.webView.uiDelegate = self
@@ -96,12 +89,11 @@ class ViewController: UIViewController, UITextFieldDelegate, WKNavigationDelegat
         if !location.hasPrefix("http://") && !location.hasPrefix("https://") {
             location = "https://" + location
         }
-        //locationTextField.text = location
         self.webView.load(URLRequest(url: URL(string: location)!))
         
     }
 
-    // MARK: - WKNavigationDelegate
+    // WKNavigationDelegate
     public func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
         if let man = self.wbManager {
             man.clearState()
@@ -112,7 +104,6 @@ class ViewController: UIViewController, UITextFieldDelegate, WKNavigationDelegat
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         if let urlString = webView.url?.absoluteString,
             urlString != "about:blank" {
-            //self.locationTextField.text = urlString
             UserDefaults.standard.setValue(urlString, forKey: ViewController.prefKeys.lastLocation.rawValue)
         }
     }
@@ -125,7 +116,7 @@ class ViewController: UIViewController, UITextFieldDelegate, WKNavigationDelegat
         webView.loadHTMLString("<p>Fail Provisional Navigation: \(error.localizedDescription)</p>", baseURL: nil)
     }
 
-    // MARK: - WKUIDelegate
+    // WKUIDelegate
     func webView(_ webView: WKWebView, runJavaScriptAlertPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: (@escaping () -> Void)) {
         let alertController = UIAlertController(
             title: frame.request.url?.host, message: message,
@@ -135,7 +126,7 @@ class ViewController: UIViewController, UITextFieldDelegate, WKNavigationDelegat
         self.present(alertController, animated: true, completion: nil)
     }
 
-    // MARK: - Observe protocol
+    // Observe protocol
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         guard
             let defKeyPath = keyPath,
@@ -154,7 +145,5 @@ class ViewController: UIViewController, UITextFieldDelegate, WKNavigationDelegat
             NSLog("Unexpected change observed by ViewController: \(String(describing: keyPath))")
         }
     }
-
-    // MARK: - Private
 
 }
