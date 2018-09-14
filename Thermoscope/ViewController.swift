@@ -16,7 +16,7 @@
 import UIKit
 import WebKit
 
-class ViewController: UIViewController, UITextFieldDelegate, WKNavigationDelegate,WKUIDelegate {
+class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
 
     enum prefKeys: String {
         case bookmarks
@@ -41,8 +41,19 @@ class ViewController: UIViewController, UITextFieldDelegate, WKNavigationDelegat
             self.webView.wbManager = wbManager
         }
     }
-
+    override func loadView(){
+        super.loadView()
+        webView.navigationDelegate = self
+        webView.uiDelegate = self
+        
+        // connect view to other objects
+        webView.wbManager = self.wbManager
+        view = self.webView
+    }
+    
+    
     @IBAction func reload() {
+        debugPrint("reloading for reasons?")
         self.webView.reload()
     }
 
@@ -50,39 +61,24 @@ class ViewController: UIViewController, UITextFieldDelegate, WKNavigationDelegat
     override func viewDidLoad() {
        
         super.viewDidLoad()
-
-        // connect view to other objects
-        self.webView.wbManager = self.wbManager
-        self.webView.navigationDelegate = self
-        self.webView.uiDelegate = self
-
-        for path in ["canGoBack", "canGoForward"] {
-            self.webView.addObserver(self, forKeyPath: path, options: NSKeyValueObservingOptions.new, context: nil)
-        }
-
         // Load app location
         
         // Local loading:
-        let url = Bundle.main.url(forResource: "index", withExtension: "html", subdirectory: "dist")!
-        debugPrint("url:", url)
-        self.webView.loadFileURL(url, allowingReadAccessTo: url)
-        debugPrint("loadFileURL called")
-        let request = URLRequest(url: url)
-        debugPrint("request created")
-        self.webView.load(request)
-        debugPrint(request)
+        let url = Bundle.main.url(forResource: "index", withExtension: "html", subdirectory: "dist/thermoscope")!
+        webView.loadFileURL(url, allowingReadAccessTo: url)
+
         // Remote loading:
 //        var homeLocation: String
 //        homeLocation = "https://thermoscope.concord.org/branch/ios/"
 //        self.loadLocation(homeLocation)
-
-
-        self.goBackButton.target = self.webView
-        self.goBackButton.action = #selector(self.webView.goBack)
-        self.goForwardButton.target = self.webView
-        self.goForwardButton.action = #selector(self.webView.goForward)
-        self.refreshButton.target = self
-        self.refreshButton.action = #selector(self.reload)
+//
+//
+//        self.goBackButton.target = self.webView
+//        self.goBackButton.action = #selector(self.webView.goBack)
+//        self.goForwardButton.target = self.webView
+//        self.goForwardButton.action = #selector(self.webView.goForward)
+//        self.refreshButton.target = self
+//        self.refreshButton.action = #selector(self.reload)
     }
 
     override func viewWillAppear(_ animated: Bool) {
