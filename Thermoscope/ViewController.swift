@@ -41,10 +41,6 @@ class ViewController: UIViewController, UITextFieldDelegate, WKNavigationDelegat
             self.webView.wbManager = wbManager
         }
     }
-    override func loadView(){
-        super.loadView()
-    }
-    
     
     @IBAction func reload() {
         self.webView.reload()
@@ -52,15 +48,17 @@ class ViewController: UIViewController, UITextFieldDelegate, WKNavigationDelegat
 
     // Event handling
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         
-        self.webView.navigationDelegate = self
         self.webView.wbManager = self.wbManager
+        self.webView.navigationDelegate = self
         self.webView.uiDelegate = self
         
         // Local loading:
         let url = Bundle.main.url(forResource: "index", withExtension: "html", subdirectory: "dist")!
-        webView.loadFileURL(url, allowingReadAccessTo: url)
+        // No need to use a URLRequest here, WKWebView has loadFileURL
+        self.webView.loadFileURL(url, allowingReadAccessTo: url)
 
         // Remote loading:
 //        var homeLocation: String
