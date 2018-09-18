@@ -43,24 +43,20 @@ class ViewController: UIViewController, UITextFieldDelegate, WKNavigationDelegat
     }
     override func loadView(){
         super.loadView()
-        self.webView.navigationDelegate = self
-        self.webView.uiDelegate = self
-
-        // connect view to other objects
-        self.webView.wbManager = self.wbManager
-        view = self.webView
     }
     
     
     @IBAction func reload() {
-        debugPrint("reloading for reasons?")
         self.webView.reload()
     }
 
     // Event handling
     override func viewDidLoad() {
-       
         super.viewDidLoad()
+        
+        self.webView.navigationDelegate = self
+        self.webView.wbManager = self.wbManager
+        self.webView.uiDelegate = self
         
         // Local loading:
         let url = Bundle.main.url(forResource: "index", withExtension: "html", subdirectory: "dist")!
@@ -70,7 +66,10 @@ class ViewController: UIViewController, UITextFieldDelegate, WKNavigationDelegat
 //        var homeLocation: String
 //        homeLocation = "https://thermoscope.concord.org/branch/ios/"
 //        self.loadLocation(homeLocation)
-
+        
+        for path in ["canGoBack", "canGoForward"] {
+            self.webView.addObserver(self, forKeyPath: path, options: NSKeyValueObservingOptions.new, context: nil)
+        }
         self.goBackButton.target = self.webView
         self.goBackButton.action = #selector(self.webView.goBack)
         self.goForwardButton.target = self.webView
