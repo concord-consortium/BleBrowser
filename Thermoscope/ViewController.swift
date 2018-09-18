@@ -50,16 +50,19 @@ class ViewController: UIViewController, UITextFieldDelegate, WKNavigationDelegat
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        
+
         self.webView.wbManager = self.wbManager
         self.webView.navigationDelegate = self
         self.webView.uiDelegate = self
         
         // Local loading:
+        // The essential undocumented feature of the WKWebView that enables Iframing of Lab:
+        self.webView.configuration.preferences.setValue(true, forKey: "allowFileAccessFromFileURLs");
+        // Set the URL up to point to the dist folder
         let url = Bundle.main.url(forResource: "index", withExtension: "html", subdirectory: "dist")!
         // No need to use a URLRequest here, WKWebView has loadFileURL
         self.webView.loadFileURL(url, allowingReadAccessTo: url)
-
+        
         // Remote loading:
 //        var homeLocation: String
 //        homeLocation = "https://thermoscope.concord.org/branch/ios/"
