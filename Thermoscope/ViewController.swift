@@ -16,7 +16,7 @@
 import UIKit
 import WebKit
 
-class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
+class ViewController: UIViewController, UITextFieldDelegate, WKNavigationDelegate, WKUIDelegate {
 
     enum prefKeys: String {
         case bookmarks
@@ -43,11 +43,11 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
     }
     override func loadView(){
         super.loadView()
-        webView.navigationDelegate = self
-        webView.uiDelegate = self
-        
+        self.webView.navigationDelegate = self
+        self.webView.uiDelegate = self
+
         // connect view to other objects
-        webView.wbManager = self.wbManager
+        self.webView.wbManager = self.wbManager
         view = self.webView
     }
     
@@ -61,26 +61,27 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
     override func viewDidLoad() {
        
         super.viewDidLoad()
-        // Load app location
         
         // Local loading:
-        let url = Bundle.main.url(forResource: "index", withExtension: "html", subdirectory: "dist/thermoscope")!
+        let url = Bundle.main.url(forResource: "index", withExtension: "html", subdirectory: "dist")!
         webView.loadFileURL(url, allowingReadAccessTo: url)
 
         // Remote loading:
 //        var homeLocation: String
 //        homeLocation = "https://thermoscope.concord.org/branch/ios/"
 //        self.loadLocation(homeLocation)
-//
-//
-//        self.goBackButton.target = self.webView
-//        self.goBackButton.action = #selector(self.webView.goBack)
-//        self.goForwardButton.target = self.webView
-//        self.goForwardButton.action = #selector(self.webView.goForward)
-//        self.refreshButton.target = self
-//        self.refreshButton.action = #selector(self.reload)
-    }
 
+        self.goBackButton.target = self.webView
+        self.goBackButton.action = #selector(self.webView.goBack)
+        self.goForwardButton.target = self.webView
+        self.goForwardButton.action = #selector(self.webView.goForward)
+        self.refreshButton.target = self
+        self.refreshButton.action = #selector(self.reload)
+    }
+    func webViewWebContentProcessDidTerminate(_ view: WKWebView){
+        debugPrint("error handler!")
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
@@ -123,6 +124,20 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
     func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {
         debugPrint(error.localizedDescription)
         webView.loadHTMLString("<p>Fail Provisional Navigation: \(error.localizedDescription)</p>", baseURL: nil)
+    }
+    
+    func webView(_ webView: WKWebView,
+                 decidePolicyFor navigationAction: WKNavigationAction,
+                 decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+        debugPrint("Request", navigationAction.request.url)
+        decisionHandler(.allow)
+    }
+    
+    func webView(_ webView: WKWebView,
+                 decidePolicyFor navigationResponse: WKNavigationResponse,
+                 decisionHandler: @escaping (WKNavigationResponsePolicy) -> Void) {
+        debugPrint("Response", navigationResponse)
+        decisionHandler(.allow)
     }
 
     // WKUIDelegate
