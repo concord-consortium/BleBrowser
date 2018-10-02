@@ -79,7 +79,7 @@ class ViewController: UIViewController, UITextFieldDelegate, WKNavigationDelegat
         self.refreshButton.action = #selector(self.reload)
     }
     func webViewWebContentProcessDidTerminate(_ view: WKWebView){
-        debugPrint("error handler!")
+        debugPrint("<<<<<  error handler!  >>>>>")
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -124,6 +124,7 @@ class ViewController: UIViewController, UITextFieldDelegate, WKNavigationDelegat
     func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {
         debugPrint(error.localizedDescription)
         webView.loadHTMLString("<p>Fail Provisional Navigation: \(error.localizedDescription)</p>", baseURL: nil)
+        debugPrint("<<<<<  error handler!  Failed to navigate - attempted to reach Home location >>>>>")
     }
     
     func webView(_ webView: WKWebView,
