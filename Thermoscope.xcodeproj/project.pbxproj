@@ -330,7 +330,7 @@
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Thermoscope/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.concord.thermoscope;
 				PRODUCT_NAME = Thermoscope;
@@ -348,7 +348,7 @@
 				DEVELOPMENT_TEAM = T8HS8WBPPQ;
 				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Thermoscope/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.concord.thermoscope;
 				PRODUCT_NAME = Thermoscope;
