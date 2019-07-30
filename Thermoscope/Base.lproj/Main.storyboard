@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="bXw-Ly-snu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="bXw-Ly-snu">
     <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
         <scene sceneID="lV6-vP-8ff">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YF2-bs-sa9" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="bXw-Ly-snu" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="izC-eW-IMa">
-                        <rect key="frame" x="0.0" y="20" width="1024" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="1024" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="UlI-6c-o9z">
@@ -24,7 +25,6 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="MvE-Ox-6zP"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YF2-bs-sa9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1204" y="367"/>
         </scene>
@@ -43,15 +43,16 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FR6-sF-hFE">
                                 <rect key="frame" x="0.0" y="24" width="1024" height="744"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DRU-nU-zz3" customClass="WBWebView" customModule="Thermoscope" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DRU-nU-zz3" customClass="WBWebView" customModule="Thermoscope" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="1024" height="744"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
                                         <connections>
                                             <outlet property="devicePicker" destination="sbN-21-YtK" id="TvY-wa-llN"/>
                                         </connections>
                                     </view>
                                     <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tick@480.png" translatesAutoresizingMaskIntoConstraints="NO" id="6wE-az-iDp">
-                                        <rect key="frame" x="391.5" y="252" width="240" height="240"/>
+                                        <rect key="frame" x="392" y="252" width="240" height="240"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="240" id="em1-ft-ljS"/>
                                             <constraint firstAttribute="height" constant="240" id="qSE-Sl-Qc3"/>
@@ -61,7 +62,7 @@
                                         <rect key="frame" x="0.0" y="744" width="1024" height="290"/>
                                         <subviews>
                                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jsu-PU-dbt">
-                                                <rect key="frame" x="0.0" y="0.0" width="1024" height="44"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="1024" height="50"/>
                                                 <items>
                                                     <barButtonItem systemItem="cancel" id="eYY-A5-dLj"/>
                                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="iTx-fl-yVJ"/>
@@ -69,7 +70,7 @@
                                                 </items>
                                             </toolbar>
                                             <pickerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jgr-9N-Ch2">
-                                                <rect key="frame" x="0.0" y="44" width="1024" height="246"/>
+                                                <rect key="frame" x="0.0" y="50" width="1024" height="240"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             </pickerView>
                                         </subviews>
@@ -84,7 +85,6 @@
                                             <constraint firstItem="Jsu-PU-dbt" firstAttribute="top" secondItem="sbN-21-YtK" secondAttribute="top" id="tnf-GX-XbV"/>
                                         </constraints>
                                         <connections>
-                                            <outlet property="bottomConstraint" destination="lVb-v6-Lgk" id="kFW-O5-3ik"/>
                                             <outlet property="cancelButton" destination="eYY-A5-dLj" id="9kz-3y-Mtu"/>
                                             <outlet property="doneButton" destination="O0z-Ct-EQb" id="ZCn-zk-UUX"/>
                                             <outlet property="pickerView" destination="jgr-9N-Ch2" id="2Ve-Zw-JDs"/>
@@ -96,49 +96,25 @@
                                     <constraint firstAttribute="trailing" secondItem="sbN-21-YtK" secondAttribute="trailing" id="5vf-8c-4sX"/>
                                     <constraint firstItem="sbN-21-YtK" firstAttribute="leading" secondItem="FR6-sF-hFE" secondAttribute="leading" id="95W-ag-guw"/>
                                     <constraint firstAttribute="trailing" secondItem="DRU-nU-zz3" secondAttribute="trailing" id="PRs-pW-gqt"/>
-                                    <constraint firstItem="6wE-az-iDp" firstAttribute="centerY" secondItem="FR6-sF-hFE" secondAttribute="centerY" id="YCS-26-icd"/>
+                                    <constraint firstItem="sbN-21-YtK" firstAttribute="top" secondItem="DRU-nU-zz3" secondAttribute="bottom" id="Vex-n2-MLw"/>
                                     <constraint firstAttribute="bottom" secondItem="DRU-nU-zz3" secondAttribute="bottom" id="YLd-Gx-jgu"/>
                                     <constraint firstItem="DRU-nU-zz3" firstAttribute="top" secondItem="FR6-sF-hFE" secondAttribute="top" id="bzf-J1-gyz"/>
+                                    <constraint firstItem="DRU-nU-zz3" firstAttribute="centerY" secondItem="6wE-az-iDp" secondAttribute="centerY" id="g1v-Dc-bHH"/>
+                                    <constraint firstItem="DRU-nU-zz3" firstAttribute="centerX" secondItem="6wE-az-iDp" secondAttribute="centerX" id="jyI-yx-hn3"/>
                                     <constraint firstItem="DRU-nU-zz3" firstAttribute="leading" secondItem="FR6-sF-hFE" secondAttribute="leading" id="llV-7P-wNu"/>
-                                    <constraint firstItem="6wE-az-iDp" firstAttribute="centerX" secondItem="FR6-sF-hFE" secondAttribute="centerX" id="xCH-QQ-ZYu"/>
                                 </constraints>
                             </view>
-                            <toolbar hidden="YES" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1f6-zQ-2YY">
-                                <rect key="frame" x="0.0" y="768" width="1024" height="44"/>
-                                <items>
-                                    <barButtonItem enabled="NO" title="&lt;" style="plain" id="NaX-Y9-Gfj"/>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="sXn-kx-dSX"/>
-                                    <barButtonItem systemItem="add" id="r6k-jv-IC4">
-                                        <connections>
-                                            <action selector="addBookmark" destination="BYZ-38-t0r" id="SvN-L1-pFS"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem width="8" style="plain" systemItem="fixedSpace" id="9q6-Tp-JwJ"/>
-                                    <barButtonItem systemItem="bookmarks" id="jSv-KT-nTS"/>
-                                    <barButtonItem width="8" style="plain" systemItem="fixedSpace" id="SWJ-63-0dX"/>
-                                    <barButtonItem style="plain" systemItem="refresh" id="LXB-CH-4RT"/>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="pN2-Zw-LM0"/>
-                                    <barButtonItem enabled="NO" title="&gt;" id="qhG-nx-nEQ"/>
-                                </items>
-                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="FR6-sF-hFE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="BrV-eG-Hn5"/>
-                            <constraint firstItem="FR6-sF-hFE" firstAttribute="trailing" secondItem="1f6-zQ-2YY" secondAttribute="trailing" id="Q1D-WB-zOb"/>
-                            <constraint firstItem="FR6-sF-hFE" firstAttribute="leading" secondItem="1f6-zQ-2YY" secondAttribute="leading" id="Xsm-ZL-EdN"/>
-                            <constraint firstItem="1f6-zQ-2YY" firstAttribute="top" secondItem="wfy-db-euE" secondAttribute="top" id="YEE-rZ-tSf"/>
-                            <constraint firstItem="1f6-zQ-2YY" firstAttribute="top" secondItem="FR6-sF-hFE" secondAttribute="bottom" id="eaN-aH-yWb"/>
+                            <constraint firstItem="FR6-sF-hFE" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="FMX-1k-q2K"/>
                             <constraint firstAttribute="trailing" secondItem="FR6-sF-hFE" secondAttribute="trailing" id="fQw-bi-VQq"/>
                             <constraint firstItem="FR6-sF-hFE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="24" id="hjA-tI-1Me"/>
-                            <constraint firstItem="1f6-zQ-2YY" firstAttribute="top" secondItem="sbN-21-YtK" secondAttribute="bottom" constant="-290" id="lVb-v6-Lgk"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="5bm-lP-CUV"/>
                     <connections>
-                        <outlet property="goBackButton" destination="NaX-Y9-Gfj" id="0Xc-k5-kMK"/>
-                        <outlet property="goForwardButton" destination="qhG-nx-nEQ" id="1GO-aY-9L7"/>
-                        <outlet property="refreshButton" destination="LXB-CH-4RT" id="350-AZ-rBZ"/>
                         <outlet property="tick" destination="6wE-az-iDp" id="aNh-gM-jXz"/>
                         <outlet property="webView" destination="DRU-nU-zz3" id="STI-th-mML"/>
                     </connections>

@@ -71,12 +71,7 @@ class ViewController: UIViewController, UITextFieldDelegate, WKNavigationDelegat
         for path in ["canGoBack", "canGoForward"] {
             self.webView.addObserver(self, forKeyPath: path, options: NSKeyValueObservingOptions.new, context: nil)
         }
-        self.goBackButton.target = self.webView
-        self.goBackButton.action = #selector(self.webView.goBack)
-        self.goForwardButton.target = self.webView
-        self.goForwardButton.action = #selector(self.webView.goForward)
-        self.refreshButton.target = self
-        self.refreshButton.action = #selector(self.reload)
+
     }
     func webViewWebContentProcessDidTerminate(_ view: WKWebView){
         debugPrint("<<<<<  error handler!  >>>>>")
